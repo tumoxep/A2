@@ -1,0 +1,9 @@
+<form class="dob-container" [formGroup]="dobForm" (ngSubmit)="onSubmit()">
+  <h1>Date of birth:</h1>
+  <div class="dob-inputs">
+    <input type="number" formControlName="day" name="day" />
+    <input type="number" formControlName="month" name="month" />
+    <input type="number" formControlName="year" name="year" />
+  </div>
+  <button class="submit" type="submit" [disabled]="!dobForm.valid">Submit</button>
+</form>

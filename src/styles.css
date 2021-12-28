@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(#264360, #5d6a61);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial;
+}
+
+
+#counter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sq {
+  width: 20px;
+  height: 20px;
+  background-color: #607362;
+  border: 1px solid #616166;
+  margin: 2px;
+}
+
+.sq-done {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #616166;
+  margin: 2px;
+}
+
+.dob-container {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  background-color: #5d6a61;
+  padding-bottom: 1rem;
+  transform: translate(-50%, -50%);
+}
+
+.dob-container h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.dob-inputs input {
+  width: 15vmin;
+  height: 10vmin;
+  font-size: 10vmin;
+  text-align: center;
+  background-color: #264360;
+  border: 1px solid white;
+  color: white;
+}
+
+.dob-inputs input:last-child {
+  width: 25vmin;
+}
+
+.edit {
+  position: fixed;
+  bottom: 10vmin;
+  right: 10vmin;
+}
+
+#tooltip {
+  background: #264360;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  display: none;
+  position: fixed;
+  bottom: 15vmin;
+  right: 10vmin;
+}
+
+#tooltip[data-show] {
+  display: block;
+}
